@@ -1,0 +1,2193 @@
+!!burlap.behavior.singleagent.Episode
+actionSequence:
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b0
+    lastStutterTimestamp: 1800262
+    position: {x: 1.0, y: 0.08, z: 1.0}
+    properties: {isOn: false}
+    timestamp: 1803224
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b10
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b10
+    lastStutterTimestamp: -1
+    position: {x: 48.0, y: 0.08, z: 21.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75, y: 1.0000002, z: 0.14999998}
+    id: door1
+    lastStutterTimestamp: 1810809
+    position: {x: 10.1, y: 1.0000002, z: 24.45}
+    properties: {isOpen: true}
+    timestamp: 1819145
+    type: Door
+    velocity: null
+- &id007 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b22
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b22
+    lastStutterTimestamp: 1826473
+    position: {x: 8.0, y: 0.08, z: 27.0}
+    properties: {isOn: true}
+    timestamp: 1833700
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b23
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b23
+    lastStutterTimestamp: 1826473
+    position: {x: 1.0, y: 0.08, z: 23.0}
+    properties: {isOn: false}
+    timestamp: 1833240
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15, y: 1.0000002, z: 0.75000024}
+    id: door1
+    lastStutterTimestamp: 3022515
+    position: {x: 9.55, y: 1.0000002, z: 24.0}
+    properties: {isOpen: false}
+    timestamp: 3034869
+    type: Door
+    velocity: null
+- &id005 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b1
+    lastStutterTimestamp: 2393705
+    position: {x: 8.0, y: 0.08, z: 7.0}
+    properties: {isOn: true}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b11
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b11
+    lastStutterTimestamp: -1
+    position: {x: 48.0, y: 0.08, z: 23.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b20
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b20
+    lastStutterTimestamp: 2525060
+    position: {x: 61.0, y: 0.08, z: 48.0}
+    properties: {isOn: false}
+    timestamp: 2534896
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b21
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b21
+    lastStutterTimestamp: 2526264
+    position: {x: 68.0, y: 0.08, z: 41.0}
+    properties: {isOn: false}
+    timestamp: 2534986
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b17
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b17
+    lastStutterTimestamp: 3497410
+    position: {x: 81.0, y: 0.08, z: 68.0}
+    properties: {isOn: false}
+    timestamp: 3514870
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b18
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b18
+    lastStutterTimestamp: 3514918
+    position: {x: 88.0, y: 0.08, z: 62.0}
+    properties: {isOn: false}
+    timestamp: 3536404
+    type: Switch
+    velocity: null
+- &id001 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door3
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75, y: 1.0000002, z: 0.14999998}
+    id: door3
+    lastStutterTimestamp: 3537334
+    position: {x: 90.1, y: 1.0000002, z: 64.45}
+    properties: {isOpen: true}
+    timestamp: 3554368
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b17
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b17
+    lastStutterTimestamp: 3536969
+    position: {x: 81.0, y: 0.08, z: 68.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door9
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door9
+    lastStutterTimestamp: 3573512
+    position: {x: 103.55, y: 1.0000002, z: 59.1}
+    properties: {isOpen: true}
+    timestamp: 3592382
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door5
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75000036, y: 1.0000002, z: 0.15000015}
+    id: door5
+    lastStutterTimestamp: 3541054
+    position: {x: 104.0, y: 1.0000002, z: 78.55}
+    properties: {isOpen: false}
+    timestamp: 3552363
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door13
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15, y: 1.0000002, z: 0.75000024}
+    id: door13
+    lastStutterTimestamp: 3608946
+    position: {x: 109.55, y: 1.0000002, z: 44.0}
+    properties: {isOpen: false}
+    timestamp: 3625227
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b7
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b7
+    lastStutterTimestamp: 3539582
+    position: {x: 108.0, y: 0.08, z: 67.0}
+    properties: {isOn: false}
+    timestamp: 3554023
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door9
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door9
+    lastStutterTimestamp: 3540201
+    position: {x: 103.55, y: 1.0000002, z: 59.1}
+    properties: {isOpen: true}
+    timestamp: 3552408
+    type: Door
+    velocity: null
+- &id002 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b18
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b18
+    lastStutterTimestamp: 3536969
+    position: {x: 88.0, y: 0.08, z: 62.0}
+    properties: {isOn: true}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door2
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door2
+    lastStutterTimestamp: 1900961
+    position: {x: 83.55, y: 1.0000002, z: 59.1}
+    properties: {isOpen: true}
+    timestamp: 0
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b18
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b18
+    lastStutterTimestamp: 0
+    position: {x: 88.0, y: 0.08, z: 62.0}
+    properties: {isOn: false}
+    timestamp: 1969553
+    type: Switch
+    velocity: null
+- *id001
+- *id002
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b2
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b2
+    lastStutterTimestamp: 1903910
+    position: {x: 88.0, y: 0.08, z: 41.0}
+    properties: {isOn: false}
+    timestamp: 1906638
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b1
+    lastStutterTimestamp: -1
+    position: {x: 8.0, y: 0.08, z: 7.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door17
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75, y: 1.0000002, z: 0.14999998}
+    id: door17
+    lastStutterTimestamp: 2118058
+    position: {x: 70.1, y: 1.0000002, z: 44.45}
+    properties: {isOpen: true}
+    timestamp: 2122549
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b2
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b2
+    lastStutterTimestamp: 3751703
+    position: {x: 88.0, y: 0.08, z: 41.0}
+    properties: {isOn: true}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b2
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b2
+    lastStutterTimestamp: 3813418
+    position: {x: 88.0, y: 0.08, z: 41.0}
+    properties: {isOn: false}
+    timestamp: 3834803
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door2
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door2
+    lastStutterTimestamp: 3838777
+    position: {x: 83.55, y: 1.0000002, z: 59.1}
+    properties: {isOpen: true}
+    timestamp: 3854057
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b17
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b17
+    lastStutterTimestamp: 3841319
+    position: {x: 81.0, y: 0.08, z: 68.0}
+    properties: {isOn: false}
+    timestamp: 3854057
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door2
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door2
+    lastStutterTimestamp: 3251166
+    position: {x: 83.55, y: 1.0000002, z: 59.1}
+    properties: {isOpen: true}
+    timestamp: 3266217
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b17
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b17
+    lastStutterTimestamp: 3251036
+    position: {x: 81.0, y: 0.08, z: 68.0}
+    properties: {isOn: true}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door3
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75, y: 1.0000002, z: 0.14999998}
+    id: door3
+    lastStutterTimestamp: 3250270
+    position: {x: 90.1, y: 1.0000002, z: 64.45}
+    properties: {isOpen: true}
+    timestamp: 0
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door9
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door9
+    lastStutterTimestamp: 3609922
+    position: {x: 103.55, y: 1.0000002, z: 59.1}
+    properties: {isOpen: true}
+    timestamp: 3626933
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b23
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b23
+    lastStutterTimestamp: 3935553
+    position: {x: 1.0, y: 0.08, z: 23.0}
+    properties: {isOn: true}
+    timestamp: 3952386
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75, y: 1.0000002, z: 0.14999998}
+    id: door1
+    lastStutterTimestamp: 3953630
+    position: {x: 10.1, y: 1.0000002, z: 24.45}
+    properties: {isOpen: true}
+    timestamp: 3970634
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door6
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15, y: 1.0000002, z: 0.75000024}
+    id: door6
+    lastStutterTimestamp: 3970682
+    position: {x: 29.55, y: 1.0000002, z: 24.0}
+    properties: {isOpen: false}
+    timestamp: 3987560
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75, y: 1.0000002, z: 0.14999998}
+    id: door1
+    lastStutterTimestamp: 3990197
+    position: {x: 10.1, y: 1.0000002, z: 24.45}
+    properties: {isOpen: true}
+    timestamp: 4001758
+    type: Door
+    velocity: null
+- &id003 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b0
+    lastStutterTimestamp: 4005577
+    position: {x: 1.0, y: 0.08, z: 1.0}
+    properties: {isOn: true}
+    timestamp: 4014770
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door8
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75000036, y: 1.0000002, z: 0.15000015}
+    id: door8
+    lastStutterTimestamp: 4016029
+    position: {x: 4.0000005, y: 1.0000002, z: 18.55}
+    properties: {isOpen: false}
+    timestamp: 4025428
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door16
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door16
+    lastStutterTimestamp: -1
+    position: {x: 103.55, y: 1.0000002, z: 99.1}
+    properties: {isOpen: true}
+    timestamp: 0
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b0
+    lastStutterTimestamp: 4025461
+    position: {x: 1.0, y: 0.08, z: 1.0}
+    properties: {isOn: false}
+    timestamp: 4037795
+    type: Switch
+    velocity: null
+- *id003
+- &id006 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b1
+    lastStutterTimestamp: 4058977
+    position: {x: 8.0, y: 0.08, z: 7.0}
+    properties: {isOn: false}
+    timestamp: 4072936
+    type: Switch
+    velocity: null
+- &id004 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b1
+    lastStutterTimestamp: 0
+    position: {x: 8.0, y: 0.08, z: 7.0}
+    properties: {isOn: true}
+    timestamp: 4078434
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b0
+    lastStutterTimestamp: 4058977
+    position: {x: 1.0, y: 0.08, z: 1.0}
+    properties: {isOn: false}
+    timestamp: 4073434
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b1
+    lastStutterTimestamp: 0
+    position: {x: 8.0, y: 0.08, z: 7.0}
+    properties: {isOn: false}
+    timestamp: 2778212
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b26
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b26
+    lastStutterTimestamp: -1
+    position: {x: 108.0, y: 0.08, z: 87.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b25
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b25
+    lastStutterTimestamp: -1
+    position: {x: 108.0, y: 0.08, z: 82.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b0
+    lastStutterTimestamp: 4093935
+    position: {x: 1.0, y: 0.08, z: 1.0}
+    properties: {isOn: true}
+    timestamp: 4103079
+    type: Switch
+    velocity: null
+- *id004
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b1
+    lastStutterTimestamp: 4025461
+    position: {x: 8.0, y: 0.08, z: 7.0}
+    properties: {isOn: false}
+    timestamp: 4037277
+    type: Switch
+    velocity: null
+- *id005
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b26
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b26
+    lastStutterTimestamp: -1
+    position: {x: 108.0, y: 0.08, z: 87.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b16
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b16
+    lastStutterTimestamp: -1
+    position: {x: 101.0, y: 0.08, z: 108.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- *id006
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b0
+    lastStutterTimestamp: 0
+    position: {x: 1.0, y: 0.08, z: 1.0}
+    properties: {isOn: false}
+    timestamp: 4182951
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door8
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75000036, y: 1.0000002, z: 0.15000015}
+    id: door8
+    lastStutterTimestamp: 4094334
+    position: {x: 4.0000005, y: 1.0000002, z: 18.55}
+    properties: {isOpen: false}
+    timestamp: 4103079
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door16
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door16
+    lastStutterTimestamp: -1
+    position: {x: 103.55, y: 1.0000002, z: 99.1}
+    properties: {isOpen: true}
+    timestamp: 0
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door16
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75000036, y: 1.0000002, z: 0.15000015}
+    id: door16
+    lastStutterTimestamp: -1
+    position: {x: 104.0, y: 1.0000002, z: 98.55}
+    properties: {isOpen: false}
+    timestamp: 0
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b1
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b1
+    lastStutterTimestamp: 4103132
+    position: {x: 8.0, y: 0.08, z: 7.0}
+    properties: {isOn: true}
+    timestamp: 4110431
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b16
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b16
+    lastStutterTimestamp: -1
+    position: {x: 101.0, y: 0.08, z: 108.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door8
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door8
+    lastStutterTimestamp: 4240100
+    position: {x: 3.55, y: 1.0000002, z: 19.1}
+    properties: {isOpen: true}
+    timestamp: 4255121
+    type: Door
+    velocity: null
+- *id007
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door8
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door8
+    lastStutterTimestamp: 4270995
+    position: {x: 3.55, y: 1.0000002, z: 19.1}
+    properties: {isOpen: true}
+    timestamp: 4285249
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b23
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b23
+    lastStutterTimestamp: 4286229
+    position: {x: 1.0, y: 0.08, z: 23.0}
+    properties: {isOn: false}
+    timestamp: 4295261
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.14999995, y: 1.0000002, z: 0.75000024}
+    id: door0
+    lastStutterTimestamp: 4298755
+    position: {x: 9.45, y: 1.0000002, z: 34.0}
+    properties: {isOpen: false}
+    timestamp: 4307811
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door0
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.14999995, y: 1.0000002, z: 0.75000024}
+    id: door0
+    lastStutterTimestamp: 4307849
+    position: {x: 9.45, y: 1.0000002, z: 34.0}
+    properties: {isOpen: false}
+    timestamp: 4327049
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b23
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b23
+    lastStutterTimestamp: 4310093
+    position: {x: 1.0, y: 0.08, z: 23.0}
+    properties: {isOn: true}
+    timestamp: 4326335
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door6
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15, y: 1.0000002, z: 0.75000024}
+    id: door6
+    lastStutterTimestamp: 4347941
+    position: {x: 29.55, y: 1.0000002, z: 24.0}
+    properties: {isOpen: false}
+    timestamp: 4356118
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b22
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b22
+    lastStutterTimestamp: 4356436
+    position: {x: 8.0, y: 0.08, z: 27.0}
+    properties: {isOn: false}
+    timestamp: 4373035
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b16
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b16
+    lastStutterTimestamp: -1
+    position: {x: 101.0, y: 0.08, z: 108.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door3
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.75, y: 1.0000002, z: 0.14999998}
+    id: door3
+    lastStutterTimestamp: -1
+    position: {x: 90.1, y: 1.0000002, z: 64.45}
+    properties: {isOpen: true}
+    timestamp: 0
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door16
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door16
+    lastStutterTimestamp: -1
+    position: {x: 103.55, y: 1.0000002, z: 99.1}
+    properties: {isOpen: true}
+    timestamp: 0
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b25
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b25
+    lastStutterTimestamp: -1
+    position: {x: 108.0, y: 0.08, z: 82.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b18
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b18
+    lastStutterTimestamp: 3251821
+    position: {x: 88.0, y: 0.08, z: 62.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: door5
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.15000011, y: 1.0000002, z: 0.7500001}
+    id: door5
+    lastStutterTimestamp: 0
+    position: {x: 103.55, y: 1.0000002, z: 79.1}
+    properties: {isOpen: true}
+    timestamp: 4474460
+    type: Door
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b26
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b26
+    lastStutterTimestamp: 4474515
+    position: {x: 108.0, y: 0.08, z: 87.0}
+    properties: {isOn: false}
+    timestamp: 4493158
+    type: Switch
+    velocity: null
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsAction
+  actionId: b23
+  interactedEntity: !!world.LabEntity
+    dynamic: true
+    elements: {}
+    extent: {x: 0.5, y: 0.15, z: 0.5}
+    id: b23
+    lastStutterTimestamp: -1
+    position: {x: 1.0, y: 0.08, z: 23.0}
+    properties: {isOn: false}
+    timestamp: 0
+    type: Switch
+    velocity: null
+rewardSequence: [8.0, 0.0, 10.0, 8.0, 7.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 13.0, 0.0,
+  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 11.0, 0.0, 6.0, 0.0, 0.0, 7.0, 0.0, 0.0, 0.0, 0.0,
+  0.0, 6.0, 0.0, 0.0, 0.0, 0.0, 0.0, 7.0, 0.0, 0.0, 7.0, 0.0, 0.0, 0.0, 6.0, 6.0,
+  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+  0.0, 0.0, 0.0, 6.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -5.0,
+  0.0, 6.0, 0.0]
+stateSequence:
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id008 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id009 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id010 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b0: *id008
+    b1: *id009
+    door8: *id010
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id011 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id012 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id013 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door0: *id011
+    b0: *id012
+    b1: *id013
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id014 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id015 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id016 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id017 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id018 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id019 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id014
+    b22: *id015
+    b13: *id016
+    door1: *id017
+    door6: *id018
+    door8: *id019
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id020 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id021 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id022 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id023 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id024 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id020
+    b13: *id021
+    door1: *id022
+    door7: *id023
+    door6: *id024
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id025 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id026 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id027 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id028 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id025
+    b22: *id026
+    door0: *id027
+    door8: *id028
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id029 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id030 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id031 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id032 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id033 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id034 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id029
+    b22: *id030
+    door1: *id031
+    b0: *id032
+    door8: *id033
+    b1: *id034
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id035 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id036 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id037 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id038 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id035
+    b22: *id036
+    door1: *id037
+    door8: *id038
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id039 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id040 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id041 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id042 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id043 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id044 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id045 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id046 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door2: *id039
+    b23: *id040
+    b22: *id041
+    door4: *id042
+    door1: *id043
+    b0: *id044
+    b1: *id045
+    door8: *id046
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id047 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b20: *id047
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id048 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b20: *id048
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id049 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id050 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id051 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id052 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id053 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id054 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id055 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id049
+    door2: *id050
+    b6: *id051
+    b7: *id052
+    b18: *id053
+    b17: *id054
+    door9: *id055
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id056 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id057 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id058 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id059 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id060 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id061 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id062 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id063 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id056
+    b2: *id057
+    door2: *id058
+    door4: *id059
+    door16: *id060
+    b26: *id061
+    b18: *id062
+    b17: *id063
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id064 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id065 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id066 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id067 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id068 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id069 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id070 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id071 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id064
+    door5: *id065
+    b6: *id066
+    b25: *id067
+    b7: *id068
+    b18: *id069
+    b17: *id070
+    door9: *id071
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id072 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id073 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id074 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id075 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id076 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id077 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id072
+    door5: *id073
+    b6: *id074
+    b25: *id075
+    b7: *id076
+    door9: *id077
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id078 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id079 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id080 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id081 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id082 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id083 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id078
+    door5: *id079
+    b14: *id080
+    b6: *id081
+    b7: *id082
+    door9: *id083
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id084 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id085 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id086 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id087 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id088 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id084
+    door5: *id085
+    b6: *id086
+    b7: *id087
+    door9: *id088
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id089 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id090 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id091 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id092 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id093 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door13: *id089
+    b14: *id090
+    door16: *id091
+    b26: *id092
+    door9: *id093
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id094 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id095 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id096 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id097 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id098 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id099 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id094
+    b6: *id095
+    b7: *id096
+    door16: *id097
+    b18: *id098
+    b17: *id099
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id100 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id101 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id102 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id103 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id104 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id105 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id106 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id107 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id100
+    door2: *id101
+    door5: *id102
+    b6: *id103
+    b7: *id104
+    b18: *id105
+    b17: *id106
+    door9: *id107
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id108 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id109 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id110 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id111 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id112 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id113 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id114 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id115 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id116 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id108
+    door2: *id109
+    door5: *id110
+    b6: *id111
+    b25: *id112
+    b7: *id113
+    b18: *id114
+    b17: *id115
+    door9: *id116
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id117 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id118 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id119 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id120 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id121 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id122 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id123 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id124 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id117
+    b2: *id118
+    door2: *id119
+    door5: *id120
+    door4: *id121
+    b18: *id122
+    b17: *id123
+    door9: *id124
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id125 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id126 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id127 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id128 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id125
+    door2: *id126
+    b18: *id127
+    b17: *id128
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id129 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id130 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id131 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id132 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id129
+    door2: *id130
+    b18: *id131
+    b17: *id132
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id133 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id134 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id135 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id136 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id133
+    door2: *id134
+    b18: *id135
+    b17: *id136
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id137 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id138 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id139 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id140 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id141 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id142 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id143 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id137
+    b2: *id138
+    door2: *id139
+    door4: *id140
+    door0: *id141
+    b18: *id142
+    b17: *id143
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id144 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id145 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id146 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id147 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id148 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id149 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id150 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b2: *id144
+    door17: *id145
+    door2: *id146
+    door4: *id147
+    b0: *id148
+    door8: *id149
+    b1: *id150
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id151 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id152 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id153 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id154 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id155 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id156 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id157 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door17: *id151
+    b21: *id152
+    b2: *id153
+    door2: *id154
+    door4: *id155
+    door0: *id156
+    door8: *id157
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id158 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id159 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id160 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id161 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id162 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door17: *id158
+    b2: *id159
+    door2: *id160
+    door4: *id161
+    door8: *id162
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id163 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id164 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id165 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id166 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id167 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id168 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id169 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id170 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id171 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id172 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b2: *id163
+    door17: *id164
+    door3: *id165
+    door2: *id166
+    b23: *id167
+    door4: *id168
+    b22: *id169
+    b18: *id170
+    b17: *id171
+    door8: *id172
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id173 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id174 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id175 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id176 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id177 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id178 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id179 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id180 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id181 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id182 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id183 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b2: *id173
+    door17: *id174
+    door3: *id175
+    door2: *id176
+    b23: *id177
+    door4: *id178
+    b22: *id179
+    door1: *id180
+    b18: *id181
+    b17: *id182
+    door8: *id183
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id184 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id185 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id186 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id187 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id184
+    door2: *id185
+    b18: *id186
+    b17: *id187
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id188 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id189 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id190 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id188
+    b18: *id189
+    b17: *id190
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id191 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id192 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id193 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id191
+    b18: *id192
+    b17: *id193
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id194 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id195 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id196 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id197 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door2: *id194
+    door0: *id195
+    b18: *id196
+    b17: *id197
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id198 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id199 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id200 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door0: *id198
+    door16: *id199
+    b26: *id200
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id201 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id202 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id203 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id204 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id205 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id206 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id207 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id208 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id201
+    b22: *id202
+    door1: *id203
+    door16: *id204
+    b26: *id205
+    b0: *id206
+    door8: *id207
+    b1: *id208
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id209 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id210 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id211 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id212 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id213 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id214 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id215 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id216 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id209
+    door5: *id210
+    b22: *id211
+    b25: *id212
+    b13: *id213
+    door1: *id214
+    door6: *id215
+    door8: *id216
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id217 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id218 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id219 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id220 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id221 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id222 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id223 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id224 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id217
+    b22: *id218
+    door1: *id219
+    door0: *id220
+    door16: *id221
+    b26: *id222
+    door6: *id223
+    door8: *id224
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id225 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id226 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id227 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id228 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id229 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id230 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id231 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id232 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id233 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id225
+    b22: *id226
+    b13: *id227
+    door1: *id228
+    b16: *id229
+    door16: *id230
+    door7: *id231
+    door6: *id232
+    door8: *id233
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id234 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id235 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id236 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id237 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id238 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id239 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id240 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id241 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id234
+    b22: *id235
+    door1: *id236
+    b26: *id237
+    door6: *id238
+    b0: *id239
+    door8: *id240
+    b1: *id241
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id242 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id243 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id244 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id245 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id246 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id242
+    b25: *id243
+    b0: *id244
+    b1: *id245
+    door8: *id246
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id247 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id248 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id249 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id250 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id251 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id252 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b25: *id247
+    door16: *id248
+    b26: *id249
+    b0: *id250
+    door8: *id251
+    b1: *id252
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id253 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id254 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id253
+    b25: *id254
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id255 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id256 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id257 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id258 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door16: *id255
+    b26: *id256
+    b0: *id257
+    b1: *id258
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id259 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id260 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id261 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id262 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id263 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id259
+    door16: *id260
+    b0: *id261
+    b1: *id262
+    door8: *id263
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id264 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id265 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id266 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id264
+    b0: *id265
+    b1: *id266
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id267 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id268 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id269 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id270 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id271 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id267
+    door16: *id268
+    b0: *id269
+    b1: *id270
+    door8: *id271
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id272 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id273 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id274 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door16: *id272
+    b0: *id273
+    b1: *id274
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id275 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id276 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id277 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id278 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b26: *id275
+    b0: *id276
+    b1: *id277
+    door8: *id278
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id279 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id280 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id281 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id282 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id283 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id279
+    b25: *id280
+    b0: *id281
+    door8: *id282
+    b1: *id283
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id284 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id285 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id286 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b0: *id284
+    door8: *id285
+    b1: *id286
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id287 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id288 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id289 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id287
+    b0: *id288
+    b1: *id289
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id290 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id291 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id292 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id293 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door16: *id290
+    b0: *id291
+    b1: *id292
+    door8: *id293
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id294 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id295 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id296 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id294
+    b0: *id295
+    b1: *id296
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id297 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id298 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id299 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id300 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id301 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door16: *id297
+    b26: *id298
+    b0: *id299
+    b1: *id300
+    door8: *id301
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id302 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id303 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id304 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id305 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id302
+    b0: *id303
+    door8: *id304
+    b1: *id305
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id306 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id307 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id308 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id309 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id310 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id306
+    door16: *id307
+    b0: *id308
+    door8: *id309
+    b1: *id310
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id311 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id312 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id313 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id314 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door16: *id311
+    b26: *id312
+    b0: *id313
+    b1: *id314
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id315 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id316 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id317 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id318 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id315
+    b0: *id316
+    b1: *id317
+    door8: *id318
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id319 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id320 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id321 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id322 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id323 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id319
+    door16: *id320
+    b0: *id321
+    door8: *id322
+    b1: *id323
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id324 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b26: *id324
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id325 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id326 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id327 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id328 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id325
+    b25: *id326
+    b0: *id327
+    b1: *id328
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id329 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id330 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id331 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id332 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b16: *id329
+    door16: *id330
+    b0: *id331
+    b1: *id332
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id333 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id334 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id335 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id336 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id337 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id338 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id339 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id340 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id333
+    b22: *id334
+    b13: *id335
+    door1: *id336
+    door16: *id337
+    b26: *id338
+    door6: *id339
+    door8: *id340
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id341 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id342 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id343 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id344 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id345 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id346 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id341
+    door5: *id342
+    b22: *id343
+    door1: *id344
+    door0: *id345
+    door8: *id346
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id347 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id348 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id349 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id350 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id351 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id352 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id353 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id347
+    b22: *id348
+    b13: *id349
+    door1: *id350
+    b16: *id351
+    door6: *id352
+    door8: *id353
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id354 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id355 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id356 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id357 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id358 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id359 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id360 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id354
+    b22: *id355
+    b25: *id356
+    door1: *id357
+    door16: *id358
+    door6: *id359
+    door8: *id360
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id361 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id362 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id363 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id364 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id365 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id366 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id367 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id361
+    b22: *id362
+    door1: *id363
+    b16: *id364
+    door0: *id365
+    door16: *id366
+    door8: *id367
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id368 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id369 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id370 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id371 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id372 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id373 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id374 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id368
+    b22: *id369
+    b6: *id370
+    b7: *id371
+    door1: *id372
+    door0: *id373
+    door8: *id374
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id375 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id376 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id377 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id378 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id379 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id380 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id381 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id382 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id375
+    b23: *id376
+    b22: *id377
+    b6: *id378
+    b7: *id379
+    door1: *id380
+    door0: *id381
+    door8: *id382
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id383 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id384 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id385 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id386 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id387 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id388 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id389 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id390 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id391 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id392 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id383
+    door5: *id384
+    b22: *id385
+    b6: *id386
+    b13: *id387
+    b7: *id388
+    door1: *id389
+    door6: *id390
+    door9: *id391
+    door8: *id392
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id393 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id394 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id395 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id396 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id397 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id398 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id393
+    b23: *id394
+    b22: *id395
+    b0: *id396
+    door8: *id397
+    b1: *id398
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id399 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id400 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id401 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id402 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id403 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id404 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id405 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id406 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door2: *id399
+    b23: *id400
+    b22: *id401
+    door4: *id402
+    b13: *id403
+    door1: *id404
+    door6: *id405
+    door8: *id406
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id407 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id408 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id409 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id410 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id411 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id412 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id413 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id407
+    b23: *id408
+    b22: *id409
+    door0: *id410
+    b18: *id411
+    b17: *id412
+    door8: *id413
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id414 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id415 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id416 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id417 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id414
+    b22: *id415
+    door0: *id416
+    door8: *id417
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id418 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id419 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id420 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id421 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    b23: *id418
+    b22: *id419
+    door0: *id420
+    door8: *id421
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id422 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id423 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id424 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id425 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id426 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id427 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id422
+    door2: *id423
+    door0: *id424
+    b18: *id425
+    b17: *id426
+    door8: *id427
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id428 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id429 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id430 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id431 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id432 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id433 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id434 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id435 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id436 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id428
+    door5: *id429
+    b6: *id430
+    b7: *id431
+    b13: *id432
+    b18: *id433
+    b17: *id434
+    door6: *id435
+    door9: *id436
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id437 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id438 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id439 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id440 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id441 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id442 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id443 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id437
+    b25: *id438
+    b26: *id439
+    door16: *id440
+    door9: *id441
+    b0: *id442
+    b1: *id443
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id444 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id445 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id446 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id447 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id448 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id449 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id450 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id451 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door5: *id444
+    b23: *id445
+    b22: *id446
+    b25: *id447
+    b16: *id448
+    b26: *id449
+    door16: *id450
+    door8: *id451
+- !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState
+  objectsByClass:
+    world.LabEntity:
+    - &id452 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id453 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id454 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id455 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id456 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id457 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id458 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+    - &id459 !!eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject {}
+  objectsMap:
+    door3: *id452
+    door5: *id453
+    b25: *id454
+    b6: *id455
+    b7: *id456
+    b26: *id457
+    door0: *id458
+    door9: *id459

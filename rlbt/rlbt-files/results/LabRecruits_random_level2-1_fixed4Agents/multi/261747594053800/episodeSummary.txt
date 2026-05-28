@@ -1,0 +1,5 @@
+Action Seq = 80,80,80,
+Reward Seq = 138.0, 122.0, 43.0, 
+EpisodeCoverage = 48.0,42.0,18.0,
+GlobalCoverage = 48.0,54.0,56.00000000000001,
+Time = 1123509,2049134,1818079,

@@ -1,0 +1,7 @@
+id,episode,entity_id,entity_type,entity_property_name,entity_property_value,goal_status,
+1,1,button2,Switch,isOn,true,FAILED. Abort was invoked.,
+2,1,button8,Switch,isOn,true,FAILED. Abort was invoked.,
+3,1,button3,Switch,isOn,true,FAILED. Abort was invoked.,
+4,1,button2,Switch,isOn,true,FAILED. Abort was invoked.,
+5,1,button8,Switch,isOn,true,FAILED. Abort was invoked.,
+6,1,button3,Switch,isOn,true,FAILED. Abort was invoked.,

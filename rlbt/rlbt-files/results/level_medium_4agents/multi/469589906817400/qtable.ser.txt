@@ -1,0 +1,389 @@
+
+
+=====================Q-Table========================================
+Qtable size = 47
+----------------------------------------------------------------------------
+State = [door3 (true),door2 (true),b3 (false),b4 (false),b9 (false),door12 (false)]
+Number of Q value entry= 6
+action: door3	value: 0.1
+action: door2	value: 0.1
+action: b3	value: 0.1
+action: b4	value: 0.1
+action: b9	value: 2.325
+action: door12	value: 0.1
+State = [b10 (true),door5 (true),b5 (false),b9 (true),door6 (true),door8 (false)]
+Number of Q value entry= 6
+action: b10	value: 0.1
+action: door5	value: 0.1
+action: b5	value: 0.1
+action: b9	value: 0.07500000000000001
+action: door6	value: 0.07500000000000001
+action: door8	value: 0.07500000000000001
+State = [door5 (true),b5 (true),door13 (true),door1 (true),door6 (true),b0 (true),b1 (false)]
+Number of Q value entry= 7
+action: door5	value: 0.1
+action: b5	value: 0.1
+action: door13	value: 0.07500000000000001
+action: door1	value: 0.1
+action: door6	value: 0.1
+action: b0	value: 0.1
+action: b1	value: 0.07500000000000001
+State = [door2 (true),b3 (false),b4 (false),b5 (true),b6 (true),b7 (true),door12 (false),b0 (true)]
+Number of Q value entry= 8
+action: door2	value: 0.1
+action: b3	value: 0.07500000000000001
+action: b4	value: 0.1
+action: b5	value: 1.5562500000000001
+action: b6	value: 0.1
+action: b7	value: 0.1
+action: door12	value: 0.1
+action: b0	value: 0.1
+State = [b10 (false),b6 (false),door1 (true),door8 (false)]
+Number of Q value entry= 4
+action: b10	value: 0.07500000000000001
+action: b6	value: 0.1
+action: door1	value: 0.07500000000000001
+action: door8	value: 0.1
+State = [door3 (true),b2 (false),door13 (true),b7 (true),door1 (true),b9 (true),door0 (false),door11 (true),b0 (true),door8 (false),b1 (false)]
+Number of Q value entry= 11
+action: door3	value: 0.1
+action: b2	value: 0.1
+action: door13	value: 0.1
+action: b7	value: 0.07500000000000001
+action: door1	value: 0.1
+action: b9	value: 0.1
+action: door0	value: 0.1
+action: door11	value: 0.1
+action: b0	value: 0.1
+action: door8	value: 0.1
+action: b1	value: 0.1
+State = [b10 (false),b2 (false),door5 (true),b5 (false),door13 (true),door1 (true),door6 (true),b0 (true),b1 (false),door8 (false)]
+Number of Q value entry= 10
+action: b10	value: 1.1812500000000001
+action: b2	value: 0.1
+action: door5	value: 0.1
+action: b5	value: 0.1
+action: door13	value: 0.1
+action: door1	value: 0.1
+action: door6	value: 0.1
+action: b0	value: 0.1
+action: b1	value: 0.1
+action: door8	value: 0.1
+State = [door5 (true),b7 (false),door1 (true),door6 (true),b0 (true)]
+Number of Q value entry= 5
+action: door5	value: 0.07500000000000001
+action: b7	value: 0.1
+action: door1	value: 0.07500000000000001
+action: door6	value: 0.1
+action: b0	value: 0.1
+State = [door3 (true),door5 (true),door4 (true),b5 (true),door13 (true),b6 (false),b7 (false),door1 (true),b9 (false)]
+Number of Q value entry= 9
+action: door3	value: 0.1
+action: door5	value: 0.1
+action: door4	value: 0.1
+action: b5	value: 0.1
+action: door13	value: 0.1
+action: b6	value: 0.1
+action: b7	value: 0.1
+action: door1	value: 0.07500000000000001
+action: b9	value: 0.1
+State = [door3 (true),door2 (true),b3 (true),b4 (true),door13 (true),door1 (true),b9 (true),door0 (false)]
+Number of Q value entry= 8
+action: door3	value: 0.1
+action: door2	value: 0.07500000000000001
+action: b3	value: 0.1
+action: b4	value: 0.1
+action: door13	value: 0.1
+action: door1	value: 0.1
+action: b9	value: 0.1
+action: door0	value: 0.1
+State = [b10 (true),door5 (true),b5 (false),b16 (false),door1 (true),b15 (false),door11 (true),door6 (true),b0 (true),door8 (false)]
+Number of Q value entry= 10
+action: b10	value: 0.1
+action: door5	value: 0.1
+action: b5	value: 0.07500000000000001
+action: b16	value: 0.1
+action: door1	value: 0.1
+action: b15	value: 0.1
+action: door11	value: 0.07500000000000001
+action: door6	value: 0.1
+action: b0	value: 0.1
+action: door8	value: 0.1
+State = [b6 (true),door13 (true),b7 (true),b16 (false),door1 (true),b15 (false)]
+Number of Q value entry= 6
+action: b6	value: 0.07500000000000001
+action: door13	value: 0.1
+action: b7	value: 0.1
+action: b16	value: 0.1
+action: door1	value: 0.325
+action: b15	value: 0.07500000000000001
+State = [door5 (true),door13 (true),b6 (false),door1 (true),door0 (true),door6 (true),b0 (true)]
+Number of Q value entry= 7
+action: door5	value: 0.07500000000000001
+action: door13	value: 0.1
+action: b6	value: 0.1
+action: door1	value: 0.1
+action: door0	value: 0.1
+action: door6	value: 0.1
+action: b0	value: 0.1
+State = [door3 (true),b3 (false),b5 (false),b15 (false),b9 (true),door6 (true),b0 (true)]
+Number of Q value entry= 7
+action: door3	value: 0.07500000000000001
+action: b3	value: 0.07500000000000001
+action: b5	value: 0.07500000000000001
+action: b15	value: 0.07500000000000001
+action: b9	value: 0.1
+action: door6	value: 0.1
+action: b0	value: 2.575
+State = [door5 (true),b5 (false),door13 (true),door1 (true),door10 (true),door6 (true),b0 (true)]
+Number of Q value entry= 7
+action: door5	value: 0.07500000000000001
+action: b5	value: 0.1
+action: door13	value: 0.07500000000000001
+action: door1	value: 0.1
+action: door10	value: 0.1
+action: door6	value: 2.075
+action: b0	value: 0.1
+State = [b10 (false),b6 (false),b7 (true),door0 (false),door6 (true)]
+Number of Q value entry= 5
+action: b10	value: 0.05625000000000001
+action: b6	value: 0.1
+action: b7	value: 0.1
+action: door0	value: 0.1
+action: door6	value: 0.1
+State = [door3 (true),door2 (true),b3 (false),b4 (false),b6 (true),b7 (true),b9 (true),door0 (false),door12 (false)]
+Number of Q value entry= 9
+action: door3	value: 0.1
+action: door2	value: 0.1
+action: b3	value: 1.5750000000000002
+action: b4	value: 0.1
+action: b6	value: 0.1
+action: b7	value: 0.1
+action: b9	value: 0.1
+action: door0	value: 0.1
+action: door12	value: 0.1
+State = [b10 (false),door4 (true),b6 (false),door13 (true),b7 (false),door1 (true),b8 (false),door7 (false),b0 (true)]
+Number of Q value entry= 9
+action: b10	value: 0.1
+action: door4	value: 0.1
+action: b6	value: 0.1
+action: door13	value: 0.1
+action: b7	value: 0.1
+action: door1	value: 0.1
+action: b8	value: 0.1
+action: door7	value: 0.1
+action: b0	value: 0.07500000000000001
+State = [door5 (true),door13 (true),b6 (false),b7 (false),door1 (true),door6 (true),b0 (true)]
+Number of Q value entry= 7
+action: door5	value: 0.1
+action: door13	value: 0.1
+action: b6	value: 0.07500000000000001
+action: b7	value: 0.1
+action: door1	value: 1.8250000000000002
+action: door6	value: 0.1
+action: b0	value: 0.1
+State = [b3 (false),door5 (true),b4 (false),b5 (false),door11 (true),door12 (false),door6 (true),b1 (false)]
+Number of Q value entry= 8
+action: b3	value: 0.1
+action: door5	value: 0.1
+action: b4	value: 0.07500000000000001
+action: b5	value: 0.1
+action: door11	value: 0.1
+action: door12	value: 0.1
+action: door6	value: 0.1
+action: b1	value: 0.1
+State = [door3 (true),b9 (false),door10 (true)]
+Number of Q value entry= 3
+action: door3	value: 0.07500000000000001
+action: b9	value: 0.07500000000000001
+action: door10	value: 0.1
+State = [b11 (false),b6 (true),b7 (true),b15 (false),door0 (false),door10 (true),door12 (false)]
+Number of Q value entry= 7
+action: b11	value: 0.1
+action: b6	value: 0.1
+action: b7	value: 0.1
+action: b15	value: 0.1
+action: door0	value: 0.07500000000000001
+action: door10	value: 0.1
+action: door12	value: 0.1
+State = [door1 (true),door10 (true)]
+Number of Q value entry= 2
+action: door1	value: 1.5750000000000002
+action: door10	value: 0.1
+State = [door5 (true),b5 (true),b6 (false),b7 (true),door1 (true),door0 (false),door10 (true),door6 (true)]
+Number of Q value entry= 8
+action: door5	value: 0.1
+action: b5	value: 0.1
+action: b6	value: 0.1
+action: b7	value: 0.07500000000000001
+action: door1	value: 0.1
+action: door0	value: 0.1
+action: door10	value: 0.1
+action: door6	value: 0.07500000000000001
+State = [b6 (true),b7 (true),door0 (false),b9 (false)]
+Number of Q value entry= 4
+action: b6	value: 0.1
+action: b7	value: 0.07500000000000001
+action: door0	value: 0.1
+action: b9	value: 0.1
+State = [door4 (true),door1 (true)]
+Number of Q value entry= 2
+action: door4	value: 0.07500000000000001
+action: door1	value: 0.1
+State = [door1 (true)]
+Number of Q value entry= 1
+action: door1	value: 0.07500000000000001
+State = [door3 (true),b3 (false),door1 (true)]
+Number of Q value entry= 3
+action: door3	value: 0.1
+action: b3	value: 0.1
+action: door1	value: 0.07500000000000001
+State = [door13 (true),b15 (false),b0 (true),b1 (false),door2 (true),b3 (false),door5 (true),b4 (false),b6 (true),b7 (true),door1 (true),door0 (false),door11 (true)]
+Number of Q value entry= 13
+action: door13	value: 0.1
+action: b15	value: 0.1
+action: b0	value: 0.1
+action: b1	value: 0.1
+action: door2	value: 0.1
+action: b3	value: 0.1
+action: door5	value: 0.07500000000000001
+action: b4	value: 0.1
+action: b6	value: 0.1
+action: b7	value: 0.1
+action: door1	value: 0.1
+action: door0	value: 0.1
+action: door11	value: 0.07500000000000001
+State = [door2 (true),door1 (true)]
+Number of Q value entry= 2
+action: door2	value: 1.5750000000000002
+action: door1	value: 0.1
+State = [door5 (false),door13 (false),door1 (false),b0 (false)]
+Number of Q value entry= 4
+action: door5	value: 0.1
+action: door13	value: 0.1
+action: door1	value: 0.1
+action: b0	value: 2.3062500000000004
+State = [b5 (true),b6 (false),door1 (true),door0 (true),door6 (true),b0 (true)]
+Number of Q value entry= 6
+action: b5	value: 0.1
+action: b6	value: 0.07500000000000001
+action: door1	value: 0.1
+action: door0	value: 0.1
+action: door6	value: 0.07500000000000001
+action: b0	value: 0.07500000000000001
+State = [door3 (true),b11 (false),b7 (false),door12 (false)]
+Number of Q value entry= 4
+action: door3	value: 0.07500000000000001
+action: b11	value: 0.1
+action: b7	value: 0.07500000000000001
+action: door12	value: 0.07500000000000001
+State = [door5 (true),b5 (true),door4 (true),b16 (false),b15 (false),door6 (true)]
+Number of Q value entry= 6
+action: door5	value: 0.1
+action: b5	value: 0.07500000000000001
+action: door4	value: 0.1
+action: b16	value: 0.1
+action: b15	value: 0.1
+action: door6	value: 0.07500000000000001
+State = [door5 (true),door1 (true),door6 (true)]
+Number of Q value entry= 3
+action: door5	value: 0.1
+action: door1	value: 0.07500000000000001
+action: door6	value: 0.1
+State = [door1 (true),b16 (false),b15 (false),door6 (true),b0 (true)]
+Number of Q value entry= 5
+action: door1	value: 0.1
+action: b16	value: 0.1
+action: b15	value: 0.1
+action: door6	value: 0.07500000000000001
+action: b0	value: 0.1
+State = [door3 (true),door5 (true),door13 (true),b6 (false),b7 (false),door1 (true),door0 (true),b9 (false),door6 (true),b0 (true)]
+Number of Q value entry= 10
+action: door3	value: 0.1
+action: door5	value: 0.1
+action: door13	value: 0.1
+action: b6	value: 0.1
+action: b7	value: 0.1
+action: door1	value: 0.07500000000000001
+action: door0	value: 0.1
+action: b9	value: 0.1
+action: door6	value: 0.1
+action: b0	value: 0.1
+State = [door3 (true),door2 (true),b3 (true),b4 (false),door13 (true),door1 (true),b9 (true)]
+Number of Q value entry= 7
+action: door3	value: 0.1
+action: door2	value: 0.1
+action: b3	value: 0.1
+action: b4	value: 1.5750000000000002
+action: door13	value: 0.1
+action: door1	value: 0.1
+action: b9	value: 0.1
+State = [door5 (true),b5 (true),b8 (false),door6 (true)]
+Number of Q value entry= 4
+action: door5	value: 0.07500000000000001
+action: b5	value: 0.0421875
+action: b8	value: 0.07500000000000001
+action: door6	value: 0.1
+State = [b5 (true),b6 (false),b7 (false),door1 (true),b16 (false),b15 (false),door6 (true)]
+Number of Q value entry= 7
+action: b5	value: 0.1
+action: b6	value: 0.1
+action: b7	value: 1.8250000000000002
+action: door1	value: 0.1
+action: b16	value: 0.1
+action: b15	value: 0.1
+action: door6	value: 0.1
+State = [door3 (true),b3 (true),door2 (true),b4 (false),door12 (false)]
+Number of Q value entry= 5
+action: door3	value: 0.07500000000000001
+action: b3	value: 0.1
+action: door2	value: 0.1
+action: b4	value: 0.1
+action: door12	value: 0.1
+State = [b10 (false),door5 (true),b5 (true),b6 (false),door6 (true),door8 (false)]
+Number of Q value entry= 6
+action: b10	value: 0.1
+action: door5	value: 0.1
+action: b5	value: 0.1
+action: b6	value: 0.07500000000000001
+action: door6	value: 0.1
+action: door8	value: 0.1
+State = [door13 (true),door1 (true)]
+Number of Q value entry= 2
+action: door13	value: 0.1
+action: door1	value: 0.07500000000000001
+State = [b10 (false),door5 (true),b5 (false),door1 (true),door6 (true)]
+Number of Q value entry= 5
+action: b10	value: 0.1
+action: door5	value: 0.1
+action: b5	value: 1.8250000000000002
+action: door1	value: 1.8250000000000002
+action: door6	value: 0.1
+State = [b10 (false),door5 (true),door13 (true),door1 (true),door6 (true),b0 (true)]
+Number of Q value entry= 6
+action: b10	value: 0.07500000000000001
+action: door5	value: 0.1
+action: door13	value: 0.1
+action: door1	value: 0.1
+action: door6	value: 0.1
+action: b0	value: 0.1
+State = [door5 (true),b6 (false),door13 (true),b7 (true),door1 (true),door0 (false),b0 (true)]
+Number of Q value entry= 7
+action: door5	value: 0.1
+action: b6	value: 1.5750000000000002
+action: door13	value: 0.1
+action: b7	value: 0.1
+action: door1	value: 0.1
+action: door0	value: 0.1
+action: b0	value: 0.1
+State = [door5 (true),b11 (false),b5 (false),door13 (true),door1 (true),door12 (false),door6 (true),b0 (true)]
+Number of Q value entry= 8
+action: door5	value: 0.1
+action: b11	value: 0.1
+action: b5	value: 0.1
+action: door13	value: 0.1
+action: door1	value: 0.1
+action: door12	value: 0.1
+action: door6	value: 0.07500000000000001
+action: b0	value: 0.1
+----------------------------------------------------------------------------

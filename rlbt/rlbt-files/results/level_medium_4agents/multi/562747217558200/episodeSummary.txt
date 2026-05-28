@@ -1,0 +1,5 @@
+Action Seq = 150,
+Reward Seq = 31.0, 
+EpisodeCoverage = 22.857142857142858,
+GlobalCoverage = 22.857142857142858,
+Time = 1742469,

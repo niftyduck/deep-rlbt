@@ -1,0 +1,85 @@
+
+
+=====================Q-Table========================================
+Qtable size = 7
+----------------------------------------------------------------------------
+State = [door3 (false),button4 (false),button5 (false),door2 (true),button2 (true),door4 (false),button3 (false),button8 (true),button6 (false),button7 (false),button1 (false)]
+Number of Q value entry= 11
+action: door3	value: 0.08975
+action: button4	value: 0.1
+action: button5	value: 0.1
+action: door2	value: 0.07500000000000001
+action: button2	value: 0.1
+action: door4	value: 0.1
+action: button3	value: 0.1
+action: button8	value: 0.1
+action: button6	value: 0.1
+action: button7	value: 0.07500000000000001
+action: button1	value: 0.1
+State = [button4 (false),door2 (false),button2 (false),button3 (false),door1 (false),button1 (false)]
+Number of Q value entry= 6
+action: button4	value: 0.07500000000000001
+action: door2	value: 0.08975
+action: button2	value: 0.07500000000000001
+action: button3	value: 0.1
+action: door1	value: 0.08975
+action: button1	value: 0.07500000000000001
+State = [button4 (true),door2 (false),button2 (false),button3 (false),door1 (false),button1 (false)]
+Number of Q value entry= 6
+action: button4	value: 0.1
+action: door2	value: 0.1
+action: button2	value: 0.1
+action: button3	value: 0.07500000000000001
+action: door1	value: 0.1
+action: button1	value: 0.1
+State = [button4 (false),button5 (false),button2 (true),button3 (false),button8 (true),button10 (false),button9 (false),button6 (false),button12 (false),button7 (true),button11 (false),door3 (false),door2 (true),door5 (false),door4 (true),door1 (false),button1 (false),door6 (false)]
+Number of Q value entry= 18
+action: button4	value: 0.1
+action: button5	value: 0.1
+action: button2	value: 0.1
+action: button3	value: 0.07500000000000001
+action: button8	value: 0.1
+action: button10	value: 0.1
+action: button9	value: 0.1
+action: button6	value: 0.1
+action: button12	value: 0.1
+action: button7	value: 0.1
+action: button11	value: 0.1
+action: door3	value: 0.1
+action: door2	value: 0.1
+action: door5	value: 0.1
+action: door4	value: 0.1
+action: door1	value: 0.08975
+action: button1	value: 0.1
+action: door6	value: 0.1
+State = [button4 (false),door2 (false),button2 (false),button3 (false),door1 (false),button1 (true)]
+Number of Q value entry= 6
+action: button4	value: 0.07500000000000001
+action: door2	value: 0.1
+action: button2	value: 0.1
+action: button3	value: 0.1
+action: door1	value: 0.1
+action: button1	value: 0.1
+State = [button4 (false),door3 (false),door2 (true),button5 (false),button2 (true),button3 (false),door4 (false),button8 (false),door1 (false),button6 (false),button7 (false),button1 (false)]
+Number of Q value entry= 12
+action: button4	value: 0.1
+action: door3	value: 0.1
+action: door2	value: 0.1
+action: button5	value: 0.1
+action: button2	value: 0.1
+action: button3	value: 0.1
+action: door4	value: 0.1
+action: button8	value: 0.07500000000000001
+action: door1	value: 0.1
+action: button6	value: 0.1
+action: button7	value: 0.1
+action: button1	value: 0.1
+State = [button4 (true),door2 (false),button2 (false),button3 (false),door1 (false),button1 (true)]
+Number of Q value entry= 6
+action: button4	value: 0.1
+action: door2	value: 0.1
+action: button2	value: 0.1
+action: button3	value: 0.07500000000000001
+action: door1	value: 0.1
+action: button1	value: 0.1
+----------------------------------------------------------------------------

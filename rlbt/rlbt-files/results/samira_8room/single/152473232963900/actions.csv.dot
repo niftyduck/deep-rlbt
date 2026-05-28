@@ -1,0 +1,778 @@
+digraph g{
+"{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:675
+Properties:
+   isOn:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<2.0000002,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:527
+Properties:
+   isOpen:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:527
+Properties:
+   isOn:false
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:675
+Properties:
+   isOn:false
+Sub-objs: }
+door1:LAB_ENTITY: {Id:door1
+Pos:<8.0,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:675
+Properties:
+   isOpen:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:675
+Properties:
+   isOn:false
+Sub-objs: }
+}" -> "{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:0
+Properties:
+   isOpen:true
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door1:LAB_ENTITY: {Id:door1
+Pos:<8.0,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+}" [label = "button2" ];
+"{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1980
+Properties:
+   isOn:false
+Sub-objs: }
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:1980
+Properties:
+   isOpen:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:1980
+Properties:
+   isOpen:true
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1980
+Properties:
+   isOn:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:1980
+Properties:
+   isOpen:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1820
+Properties:
+   isOn:false
+Sub-objs: }
+door1:LAB_ENTITY: {Id:door1
+Pos:<8.0,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1980
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1980
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1980
+Properties:
+   isOn:false
+Sub-objs: }
+}" -> "{
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:0
+Properties:
+   isOpen:true
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+}" [label = "button8" ];
+"{
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:3110
+Properties:
+   isOn:false
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:3110
+Properties:
+   isOpen:true
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:3110
+Properties:
+   isOn:true
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:2957
+Properties:
+   isOn:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:2753
+Properties:
+   isOn:true
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:2780
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:3110
+Properties:
+   isOn:false
+Sub-objs: }
+}" -> "{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:0
+Properties:
+   isOpen:true
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+}" [label = "button3" ];
+
+}"{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:611
+Properties:
+   isOn:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<2.0000002,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:464
+Properties:
+   isOpen:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:464
+Properties:
+   isOn:false
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:611
+Properties:
+   isOn:false
+Sub-objs: }
+door1:LAB_ENTITY: {Id:door1
+Pos:<8.0,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:611
+Properties:
+   isOpen:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:611
+Properties:
+   isOn:false
+Sub-objs: }
+}" -> "{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:0
+Properties:
+   isOpen:true
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door1:LAB_ENTITY: {Id:door1
+Pos:<8.0,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+}" [label = "button2" ];
+"{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1948
+Properties:
+   isOn:false
+Sub-objs: }
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:1948
+Properties:
+   isOpen:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:1773
+Properties:
+   isOpen:true
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1948
+Properties:
+   isOn:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:1948
+Properties:
+   isOpen:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1788
+Properties:
+   isOn:false
+Sub-objs: }
+door1:LAB_ENTITY: {Id:door1
+Pos:<8.0,1.0000002,8.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1948
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1948
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:1948
+Properties:
+   isOn:false
+Sub-objs: }
+}" -> "{
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:0
+Properties:
+   isOpen:true
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+}" [label = "button8" ];
+"{
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:3298
+Properties:
+   isOn:false
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:3298
+Properties:
+   isOpen:true
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:3298
+Properties:
+   isOn:true
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:3142
+Properties:
+   isOn:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:2938
+Properties:
+   isOn:true
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:2965
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:3298
+Properties:
+   isOn:false
+Sub-objs: }
+}" -> "{
+button4:LAB_ENTITY: {Id:button4
+Pos:<3.0,0.08,1.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+door3:LAB_ENTITY: {Id:door3
+Pos:<6.0000005,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+door2:LAB_ENTITY: {Id:door2
+Pos:<1.55,1.0000002,9.1>, vel:null, extent:<0.15000011,1.0000002,0.7500001>
+T:0
+Properties:
+   isOpen:true
+Sub-objs: }
+button5:LAB_ENTITY: {Id:button5
+Pos:<5.0,0.08,14.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button2:LAB_ENTITY: {Id:button2
+Pos:<5.0,0.08,5.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button3:LAB_ENTITY: {Id:button3
+Pos:<5.0,0.08,3.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+door4:LAB_ENTITY: {Id:door4
+Pos:<8.0,1.0000002,18.55>, vel:null, extent:<0.75000036,1.0000002,0.15000015>
+T:0
+Properties:
+   isOpen:false
+Sub-objs: }
+button8:LAB_ENTITY: {Id:button8
+Pos:<1.0,0.08,17.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:true
+Sub-objs: }
+button6:LAB_ENTITY: {Id:button6
+Pos:<1.0,0.08,12.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button7:LAB_ENTITY: {Id:button7
+Pos:<6.0,0.08,11.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+button1:LAB_ENTITY: {Id:button1
+Pos:<2.0,0.08,6.0>, vel:null, extent:<0.5000001,0.15,0.49999994>
+T:0
+Properties:
+   isOn:false
+Sub-objs: }
+}" [label = "button3" ];
+
+}
