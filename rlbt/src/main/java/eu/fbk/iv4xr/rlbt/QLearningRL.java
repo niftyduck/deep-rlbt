@@ -46,7 +46,6 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-
 /**
  * Tabular Q-learning algorithm [1]. This implementation will work correctly with Options [2]. The implementation can either be used for learning or planning,
  * the latter of which is performed by running many learning episodes in succession in a {@link burlap.mdp.singleagent.environment.SimulatedEnvironment}.
@@ -73,6 +72,7 @@ public class QLearningRL extends MDPSolver implements QProvider, LearningAgent, 
 
 	/**
 	 * The tabular mapping from states to Q-values
+	 * Domanda: quanto vale fare l'azione a nello stato s?
 	 */
 	protected Map<HashableState, QLearningStateNode> 				qFunction;
 	
@@ -105,7 +105,7 @@ public class QLearningRL extends MDPSolver implements QProvider, LearningAgent, 
 	 * The learning rate function used.
 	 */
 	protected LearningRate											learningRate;
-	
+
 	public QFunction getqInitFunction() {
 		return qInitFunction;
 	}

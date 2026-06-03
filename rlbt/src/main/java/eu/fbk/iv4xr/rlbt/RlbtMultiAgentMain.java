@@ -331,7 +331,7 @@ public class RlbtMultiAgentMain{
 		LabRecruitsRLMultiAgentEnvironment labRecruitsRlMultiAgentEnv = new LabRecruitsRLMultiAgentEnvironment(lrmultiagentConfiguration, new JaccardDistance());
 		DomainGenerator lrDomainGenerator = new LabRecruitsDomainGenerator();
 		final SADomain domain = (SADomain) lrDomainGenerator.generateDomain();
-				
+
 		int numEpisodes = (int)burlapConfiguration.getParameterValue("burlap.num_of_episodes");
 		
 		String rewardtp = (String)lrConfiguration.getParameterValue("labrecruits.rewardtype");

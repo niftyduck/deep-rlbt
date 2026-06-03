@@ -61,7 +61,6 @@ public class RlbtMain{
 	static LRConfiguration lrConfiguration = new LRConfiguration();
 
 	private static List<Episode> executeQLearningTrainingOnLabRecruits() throws InterruptedException, FileNotFoundException {
-		
 		LabRecruitsRLEnvironment labRecruitsRlEnvironment = new LabRecruitsRLEnvironment(lrConfiguration, new JaccardDistance());
 		DomainGenerator lrDomainGenerator = new LabRecruitsDomainGenerator();
 		final SADomain domain = (SADomain) lrDomainGenerator.generateDomain();
@@ -241,8 +240,6 @@ public class RlbtMain{
 		}else {
 			throw new RuntimeException("Algorithm "+alg+" not supported");
 		}
-		
-		
 	}
 	
 	
