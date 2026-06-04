@@ -49,7 +49,7 @@ import java.util.Set;
 /**
  * Tabular Q-learning algorithm [1]. This implementation will work correctly with Options [2]. The implementation can either be used for learning or planning,
  * the latter of which is performed by running many learning episodes in succession in a {@link burlap.mdp.singleagent.environment.SimulatedEnvironment}.
- * If you are going to use this algorithm for planning, call the {@link #initializeForPlanning(int)}
+ *n If you are going to use this algorithm for plannig, call the {@link #initializeForPlanning(int)}
  * method before calling {@link #planFromState(State)}.
  * The number of episodes used for planning can be determined
  * by a threshold maximum number of episodes, or by a maximum change in the Q-function threshold.
@@ -244,7 +244,7 @@ public class QLearningRL extends MDPSolver implements QProvider, LearningAgent, 
 	/**
 	 * The total number of learning steps performed by this agent.
 	 */
-	protected int													totalNumberOfSteps = 0;
+	protected int totalNumberOfSteps = 0;
 	
 	protected Random 					rand;
 	private StateDistance stDistFunction;
@@ -306,8 +306,7 @@ public class QLearningRL extends MDPSolver implements QProvider, LearningAgent, 
 			double qInit, double learningRate, Policy learningPolicy, int maxEpisodeSize) {
 		this.QLInit(domain, gamma, hashingFactory, new ConstantValueFunction(qInit), learningRate, learningPolicy, maxEpisodeSize);
 	}
-	
-	
+
 	/**
 	 * Initializes the algorithm. Note that if the provided policy is derived from the Q-value of this learning agent (as it should be),
 	 * you may need to set the policy to point to this object after call this constructor; the constructor will not do this automatically in case it was by design
@@ -326,7 +325,6 @@ public class QLearningRL extends MDPSolver implements QProvider, LearningAgent, 
 			QFunction qInit, double learningRate, Policy learningPolicy, int maxEpisodeSize) {
 		this.QLInit(domain, gamma, hashingFactory, qInit, learningRate, learningPolicy, maxEpisodeSize);
 	}
-	
 	
 	
 	/**
@@ -717,11 +715,11 @@ public class QLearningRL extends MDPSolver implements QProvider, LearningAgent, 
 			System.out.println("Latest state (after checking state similarity)= "+ curState.s().toString());
 			//System.out.println("In runLearningEpisode() - before selection of action");
 			Action action = learningPolicy.action(curState.s());
-			System.out.println("Action Selected : in runLearningEpisode(): "+action.actionName());
+			System.out.println("Action Selected : in (): "+action.actionName());
 			printQtable(curState);
 			//System.out.println("Get Q value");
 			QValue curQ = this.getQ(curState, action);
-			
+
 			EnvironmentOutcome eo;
 			if(!(action instanceof Option)){
 				eo = env.executeAction(action);
