@@ -17,9 +17,37 @@ import burlap.mdp.singleagent.environment.Environment;
 import burlap.mdp.singleagent.environment.EnvironmentOutcome;
 import eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsState;
 
+import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
+import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
+import org.deeplearning4j.nn.conf.layers.DenseLayer;
+import org.deeplearning4j.nn.conf.layers.OutputLayer;
+import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
+import org.deeplearning4j.util.ModelSerializer;
+import org.nd4j.linalg.activations.Activation;
+import org.nd4j.linalg.api.ndarray.INDArray;
+import org.nd4j.linalg.factory.Nd4j;
+import org.nd4j.linalg.learning.config.Adam;
+import org.nd4j.linalg.lossfunctions.LossFunctions;
+
+import burlap.mdp.core.oo.state.ObjectInstance;
+import eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsEntityObject;
+import world.LabEntity;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+
+/**
+ * The behavior here is slightly different. We don't use nodes (i.e. a row of Q-table, memorized as HashMap<HashableState, QLearningStateNode>).
+ * Here nodes don't exist: the neural network substitutes the entire map: given an state (encoded as a vector) in input, the network
+ * returns the in output directly all Q-values for each action in a single forward pass. No lookup table, no nodes, no HashMap.
+ * Moreover, StateDistance (JaccardDistance) is not needed. In normal QLearning, it's useful to find similar states, but the neural network
+ * naturally generalizes similar states (advantage wrt tabular).
+ */
 
 public class DeepQLearningRL extends MDPSolver implements QProvider, LearningAgent {
 
@@ -430,11 +458,67 @@ public class DeepQLearningRL extends MDPSolver implements QProvider, LearningAge
         return best;
     }
 
+    /**
+     * Prints a summary of the network in place of a Q-table.
+     */
+    public void printNetworkSummary(PrintStream ps) {
+        ps.println("\n\n=====================Deep Q-Network Summary========================================");
+        ps.println("Entity IDs (actions): " + entityIds);
+        ps.println("Number of entities / actions: " + entityIds.size());
+        ps.println("Network layers: " + network.getnLayers());
+        ps.println(network.summary());
+        ps.println("----------------------------------------------------------------------------");
+    }
+
+    /**
+     * Saves the network weights and architecture to disk.
+     */
+    public void serializeModel(String path) {
+        try {
+            ModelSerializer.writeModel(network, new File(path), true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Loads the network weights and architecture from disk.
+     */
+    public void deserializeModel(String path) {
+        try {
+            this.network = ModelSerializer.restoreMultiLayerNetwork(new File(path));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void resetSolver() {
         // re-initializes the network weights with Xavier (same as constructor)
         this.network.init();
         this.eStepCounter = 0;
         this.totalNumberOfSteps = 0;
+    }
+
+
+    /**
+     * Same signature as QLearningRL.printFinalQtable() for drop-in compatibility.
+     */
+    public void printFinalQtable(PrintStream ps) {
+        printNetworkSummary(ps);
+    }
+
+    /**
+     * Same signature as QLearningRL.serializeQTable() for drop-in compatibility.
+     */
+    public void serializeQTable(String path) {
+        serializeModel(path);
+    }
+
+    /**
+     * Same signature as QLearningRL.deserializeQTable() for drop-in compatibility.
+     */
+    public void deserializeQTable(String path) {
+        deserializeModel(path);
     }
 }

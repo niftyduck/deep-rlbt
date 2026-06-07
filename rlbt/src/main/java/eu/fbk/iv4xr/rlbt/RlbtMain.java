@@ -79,14 +79,16 @@ public class RlbtMain{
 			burlapConfiguration.setParameterValue("burlap.qlearning.decayedepsilonstep", Double.toString(0));			
 		}
 
-		/*create Reinforcement Learning (Q-learning) agent*/
-		QLearningRL agent = new QLearningRL(domain,
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.gamma"),
-				new RlbtHashableStateFactory(),
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.qinit"),
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.lr"),
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.epsilonval"),
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.decayedepsilonstep"),
+		/*create Reinforcement Learning (Deep Q-learning) agent*/
+		String levelName = (String) lrConfiguration.getParameterValue("labrecruits.level_name");
+		String levelFolder = (String) lrConfiguration.getParameterValue("labrecruits.level_folder");
+		List<String> entityIds = LabRecruitsRLEnvironment.loadEntityIds(levelName, levelFolder);
+		DeepQLearningRL agent = new DeepQLearningRL(domain,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.gamma"),
+				entityIds,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.lr"),
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.epsilonval"),
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.decayedepsilonstep"),
 				numEpisodes);
 		
 		List<Episode> episodes = new ArrayList<Episode>(numEpisodes);	// list to store results from Q-learning episodes
@@ -302,24 +304,29 @@ public class RlbtMain{
 		final SADomain domain = (SADomain) lrDomainGenerator.generateDomain();
 
 		int maxActionsPerEpisode = (int)lrConfiguration.getParameterValue("labrecruits.max_actions_per_episode");
-		/*create Reinforcement Learning (Q-learning) agent*/
-		QLearningRL agent = new QLearningRL(domain, 
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.gamma"), 
-				new RlbtHashableStateFactory(), 
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.qinit"), 
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.lr"));
+		/*create Reinforcement Learning (Deep Q-learning) agent*/
+		String levelNameT = (String) lrConfiguration.getParameterValue("labrecruits.level_name");
+		String levelFolderT = (String) lrConfiguration.getParameterValue("labrecruits.level_folder");
+		List<String> entityIdsT = LabRecruitsRLEnvironment.loadEntityIds(levelNameT, levelFolderT);
+		DeepQLearningRL agent = new DeepQLearningRL(domain,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.gamma"),
+				entityIdsT,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.lr"),
+				0.0,   // epsilon = 0: always greedy during testing
+				0.0,   // no decay
+				maxActionsPerEpisode);
 		long startTime = System.currentTimeMillis();
-		
+
 		String qtablePath = outputDir + File.separator + "cqtable.ser";//(String)burlapConfiguration.getParameterValue("burlap.qlearning.out_qtable");
-		agent.deserializeQTable(qtablePath );
+		agent.deserializeQTable(qtablePath);
 		agent.printFinalQtable(System.out);
-		
+
 		System.out.println("Start testing agent");
 		int numTestingEpisodes=10;
-		for(int i = 0; i < numTestingEpisodes; i++){			
+		for(int i = 0; i < numTestingEpisodes; i++){
 			labRecruitsRlEnvironment.startAgentEnvironment();
-			
-			Episode episode = agent.testQLearingAgent(labRecruitsRlEnvironment, maxActionsPerEpisode);
+
+			Episode episode = agent.testDeepQLearningAgent(labRecruitsRlEnvironment, maxActionsPerEpisode);
 			System.out.println("Finished Episode = "+ (i));
 			labRecruitsRlEnvironment.CalculateEpisodeCoverage();
 			labRecruitsRlEnvironment.CalculateGlobalCoverageAfterTraining();
@@ -327,7 +334,7 @@ public class RlbtMain{
 			labRecruitsRlEnvironment.resetStateMemory();   // reset state buffer at the beginning of an episode
 			labRecruitsRlEnvironment.stopAgentEnvironment();  /*stop RL agent environment*/
 		}
-		Episode episode1 = agent.testQLearingAgent(labRecruitsRlEnvironment, maxActionsPerEpisode);
+		Episode episode1 = agent.testDeepQLearningAgent(labRecruitsRlEnvironment, maxActionsPerEpisode);
 		return episode1;
 	}
 

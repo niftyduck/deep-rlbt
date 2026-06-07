@@ -89,7 +89,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.0</version>
+			<version>3.12.0</version>
 		</dependency>
         <!-- dependencies on iv4xr Agent Framework -->
        <dependency>
@@ -115,5 +115,16 @@
     <version>4.0</version>
 </dependency>
 	
+        <!-- DL4J: neural network (Deep Q-Learning) -->
+        <dependency>
+            <groupId>org.deeplearning4j</groupId>
+            <artifactId>deeplearning4j-core</artifactId>
+            <version>1.0.0-M2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.nd4j</groupId>
+            <artifactId>nd4j-native-platform</artifactId>
+            <version>1.0.0-M2.1</version>
+        </dependency>
     </dependencies>
 </project>
