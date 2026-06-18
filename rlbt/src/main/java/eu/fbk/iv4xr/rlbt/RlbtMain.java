@@ -25,7 +25,6 @@ import eu.fbk.iv4xr.rlbt.configuration.BurlapConfiguration;
 import eu.fbk.iv4xr.rlbt.configuration.LRConfiguration;
 import eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsDomainGenerator;
 import eu.fbk.iv4xr.rlbt.labrecruits.LabRecruitsRLEnvironment;
-import eu.fbk.iv4xr.rlbt.labrecruits.RlbtHashableStateFactory;
 import eu.fbk.iv4xr.rlbt.labrecruits.distance.JaccardDistance;
 import eu.fbk.iv4xr.rlbt.utils.SerializationUtil;
 
@@ -37,7 +36,7 @@ import eu.fbk.iv4xr.rlbt.utils.SerializationUtil;
 public class RlbtMain{
 
 	public enum BurlapAlgorithm {
-		QLearning
+		DeepQLearning
 	}
 
 	public enum SearchMode {
@@ -60,7 +59,7 @@ public class RlbtMain{
 	static BurlapConfiguration burlapConfiguration = new BurlapConfiguration();
 	static LRConfiguration lrConfiguration = new LRConfiguration();
 
-	private static List<Episode> executeQLearningTrainingOnLabRecruits() throws InterruptedException, FileNotFoundException {
+	private static List<Episode> executeDeepQLearningTrainingOnLabRecruits() throws InterruptedException, FileNotFoundException {
 		LabRecruitsRLEnvironment labRecruitsRlEnvironment = new LabRecruitsRLEnvironment(lrConfiguration, new JaccardDistance());
 		DomainGenerator lrDomainGenerator = new LabRecruitsDomainGenerator();
 		final SADomain domain = (SADomain) lrDomainGenerator.generateDomain();
@@ -89,18 +88,20 @@ public class RlbtMain{
 				(double) burlapConfiguration.getParameterValue("burlap.qlearning.lr"),
 				(double) burlapConfiguration.getParameterValue("burlap.qlearning.epsilonval"),
 				(double) burlapConfiguration.getParameterValue("burlap.qlearning.decayedepsilonstep"),
-				numEpisodes);
+				numEpisodes,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.epsilonmin"),
+				(int)    burlapConfiguration.getParameterValue("burlap.network.hidden_size"));
 		
-		List<Episode> episodes = new ArrayList<Episode>(numEpisodes);	// list to store results from Q-learning episodes
+		List<Episode> episodes = new ArrayList<Episode>(numEpisodes);
 		List<Double> episodeCoverage =  new ArrayList<Double>(numEpisodes);
 		List<Long> episodeTime =  new ArrayList<Long>(numEpisodes);
 
 		//long startTime = System.currentTimeMillis();
-		
+
 		int maxActionsPerEpisode = (int)lrConfiguration.getParameterValue("labrecruits.max_actions_per_episode");
 		/*------------Training - start running episodes------------------------*/
 		labRecruitsRlEnvironment.startAgentEnvironment();
-		for(int i = 0; i < numEpisodes; i++){			
+		for(int i = 0; i < numEpisodes; i++){
 			labRecruitsRlEnvironment.resetStateMemory();   // reset state buffer at the beginning of an episode
 			long startTime = System.currentTimeMillis();
 			episodes.add(agent.runLearningEpisode(labRecruitsRlEnvironment, maxActionsPerEpisode));
@@ -120,10 +121,10 @@ public class RlbtMain{
 		/*------------Save------------------------*/
 		//long estimatedTime = System.currentTimeMillis() - startTime;
 		//System.out.println("Time - Training : "+estimatedTime);
-		agent.printFinalQtable(System.out);
-		String qtableOutputFile = outputDir + File.separator + "qtable.ser"; // (String)burlapConfiguration.getParameterValue("burlap.qlearning.out_qtable");
-		agent.serializeQTable(qtableOutputFile);
-		agent.printFinalQtable(new PrintStream(qtableOutputFile + ".txt"));
+		agent.printNetworkSummary(System.out);
+		String qNetworkOutputFile = outputDir + File.separator + "qnetwork.ser"; // (String)burlapConfiguration.getParameterValue("burlap.qlearning.out_qtable");
+		agent.serializeModel(qNetworkOutputFile);
+		agent.printNetworkSummary(new PrintStream(qNetworkOutputFile + ".txt"));
 		String episodesummaryfile = outputDir + File.separator + "episodeSummary.txt"; 
 		SaveEpisodeSummary(episodes, episodesummaryfile, episodeCoverage, episodeTime);  // store episode summary (number of actions and reward per episode)
 				
@@ -172,17 +173,21 @@ public class RlbtMain{
 				
 		int numEpisodes = (int)burlapConfiguration.getParameterValue("burlap.num_of_episodes");
 
-		/*create Reinforcement Learning (Q-learning) agent*/
-		QLearningRL agent = new QLearningRL(domain, 
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.gamma"), 
-				new RlbtHashableStateFactory(), 
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.qinit"), 
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.lr"),
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.epsilonval"),
-				(double)burlapConfiguration.getParameterValue("burlap.qlearning.decayedepsilonstep"),
-				numEpisodes);
-		
-		List<Episode> episodes = new ArrayList<Episode>(numEpisodes);	//list to store results from Q-learning episodes
+		/*create Reinforcement Learning (Deep Q-learning) agent*/
+		String levelName = (String) lrConfiguration.getParameterValue("labrecruits.level_name");
+		String levelFolder = (String) lrConfiguration.getParameterValue("labrecruits.level_folder");
+		List<String> entityIds = LabRecruitsRLEnvironment.loadEntityIds(levelName, levelFolder);
+		DeepQLearningRL agent = new DeepQLearningRL(domain,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.gamma"),
+				entityIds,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.lr"),
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.epsilonval"),
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.decayedepsilonstep"),
+				numEpisodes,
+				(double) burlapConfiguration.getParameterValue("burlap.qlearning.epsilonmin"),
+				(int)    burlapConfiguration.getParameterValue("burlap.network.hidden_size"));
+
+		List<Episode> episodes = new ArrayList<Episode>(numEpisodes);
 		List<Double> episodeCoverage =  new ArrayList<Double>(numEpisodes);
 		List<Long> episodeTime =  new ArrayList<Long>(numEpisodes);
 
@@ -194,7 +199,7 @@ public class RlbtMain{
 		for(int i = 0; i < numEpisodes; i++){			
 			labRecruitsRlEnvironment.resetStateMemory();   // reset state buffer at the beginning of an episode
 			long startTime = System.currentTimeMillis();
-			episodes.add(agent.runLearningEpisodeRandom(labRecruitsRlEnvironment, maxActionsPerEpisode));
+			episodes.add(agent.runLearningEpisode(labRecruitsRlEnvironment, maxActionsPerEpisode));
 			long estimatedTime = System.currentTimeMillis() - startTime;
 			System.out.println("Time for this episode  : "+estimatedTime);
 			
@@ -211,10 +216,10 @@ public class RlbtMain{
 		/*------------Save------------------------*/
 		//long estimatedTime = System.currentTimeMillis() - startTime;
 		//System.out.println("Time - Training : "+estimatedTime);
-		agent.printFinalQtable(System.out);
-		String qtableOutputFile = outputDir + File.separator + "qtable.ser"; // (String)burlapConfiguration.getParameterValue("burlap.qlearning.out_qtable");
-		agent.serializeQTable(qtableOutputFile);
-		agent.printFinalQtable(new PrintStream(qtableOutputFile + ".txt"));
+		agent.printNetworkSummary(System.out);
+		String qNetworkOutputFile = outputDir + File.separator + "qnetwork.ser"; // (String)burlapConfiguration.getParameterValue("burlap.qlearning.out_qtable");
+		agent.serializeModel(qNetworkOutputFile);
+		agent.printNetworkSummary(new PrintStream(qNetworkOutputFile + ".txt"));
 		String episodesummaryfile = outputDir + File.separator + "episodeSummary.txt"; 
 		SaveEpisodeSummary(episodes, episodesummaryfile, episodeCoverage, episodeTime);  // store episode summary (number of actions and reward per episode)
 		
@@ -236,8 +241,8 @@ public class RlbtMain{
 	private List<Episode> executeTraining (CommandLine line, Options options) throws FileNotFoundException, InterruptedException {
 		// check algorithm and execute corresponding method
 		String alg = (String)burlapConfiguration.getParameterValue("burlap.algorithm");
-		if (alg.equalsIgnoreCase(BurlapAlgorithm.QLearning.toString())) {
-			List<Episode> episodes = executeQLearningTrainingOnLabRecruits();
+		if (alg.equalsIgnoreCase(BurlapAlgorithm.DeepQLearning.toString())) {
+			List<Episode> episodes = executeDeepQLearningTrainingOnLabRecruits();
 			return episodes;
 		}else {
 			throw new RuntimeException("Algorithm "+alg+" not supported");
@@ -255,7 +260,7 @@ public class RlbtMain{
 	private List<Episode> executeRandom (CommandLine line, Options options) throws FileNotFoundException, InterruptedException {
 		// check algorithm and execute corresponding method
 		String alg = (String)burlapConfiguration.getParameterValue("burlap.algorithm");
-		if (alg.equalsIgnoreCase(BurlapAlgorithm.QLearning.toString())) {
+		if (alg.equalsIgnoreCase(BurlapAlgorithm.DeepQLearning.toString())) {
 			// to enable random exploration, set epsilon to 1 (no exploitation)
 			burlapConfiguration.setParameterValue("burlap.qlearning.epsilonval", "1.0");
 			burlapConfiguration.setParameterValue("burlap.qlearning.decayedepsilonstep", "1.0");
@@ -278,8 +283,8 @@ public class RlbtMain{
 	private Episode executeTesting (CommandLine line, Options options) throws FileNotFoundException, InterruptedException {
 		// check algorithm and execute corresponding method
 		String alg = (String)burlapConfiguration.getParameterValue("burlap.algorithm");
-		if (alg.equalsIgnoreCase(BurlapAlgorithm.QLearning.toString())) {
-			Episode episode = executeQLearningTestingOnLabRecruits();
+		if (alg.equalsIgnoreCase(BurlapAlgorithm.DeepQLearning.toString())) {
+			Episode episode = executeDeepQLearningTestingOnLabRecruits();
 			return episode;
 		}else {
 			throw new RuntimeException("Algorithm "+alg+" not supported");
@@ -295,7 +300,7 @@ public class RlbtMain{
 	 * @throws FileNotFoundException 
 	 * @throws InterruptedException 
 	 */
-	private Episode executeQLearningTestingOnLabRecruits () throws FileNotFoundException, InterruptedException {
+	private Episode executeDeepQLearningTestingOnLabRecruits () throws FileNotFoundException, InterruptedException {
 		/*initialize RL environment*/
 		LabRecruitsRLEnvironment labRecruitsRlEnvironment = new LabRecruitsRLEnvironment(lrConfiguration, new JaccardDistance());
 		
@@ -314,12 +319,13 @@ public class RlbtMain{
 				(double) burlapConfiguration.getParameterValue("burlap.qlearning.lr"),
 				0.0,   // epsilon = 0: always greedy during testing
 				0.0,   // no decay
-				maxActionsPerEpisode);
-		long startTime = System.currentTimeMillis();
+				maxActionsPerEpisode,
+				0.0,   // epsilonMin irrelevant during testing
+				(int) burlapConfiguration.getParameterValue("burlap.network.hidden_size"));
 
-		String qtablePath = outputDir + File.separator + "cqtable.ser";//(String)burlapConfiguration.getParameterValue("burlap.qlearning.out_qtable");
-		agent.deserializeQTable(qtablePath);
-		agent.printFinalQtable(System.out);
+		String qnetworkPath = outputDir + File.separator + "qnetwork.ser";//(String)burlapConfiguration.getParameterValue("burlap.qlearning.out_qtable");
+		agent.deserializeModel(qnetworkPath);
+		agent.printNetworkSummary(System.out);
 
 		System.out.println("Start testing agent");
 		int numTestingEpisodes=10;
@@ -352,8 +358,8 @@ public class RlbtMain{
 		// check algorithm and execute corresponding method
 		String alg = (String)burlapConfiguration.getParameterValue("burlap.algorithm");
 		String labRecruitsLevel = (String) lrConfiguration.getParameterValue("labrecruits.level_name");
-		if (alg.equalsIgnoreCase(BurlapAlgorithm.QLearning.toString())) {
-			List<Episode> episodes = executeQLearningTrainingOnLabRecruits();
+		if (alg.equalsIgnoreCase(BurlapAlgorithm.DeepQLearning.toString())) {
+			List<Episode> episodes = executeDeepQLearningTrainingOnLabRecruits();
 			return episodes;
 		}else {
 			throw new RuntimeException("Algorithm "+alg+" not supported");

@@ -1,0 +1,22 @@
+
+
+=====================Deep Q-Network Summary========================================
+Entity IDs (actions): [b0, door0, door1, door3, door4, door5, door6, door7, door8, door9, door12, door15, door16, door18, door21, door26, door30, door37, door39, door49, door51, door53, door56, door57, door59, b1, door2, door17, door19, door24, door52, door54, b3, door11, b17, door13, b18, door41, b24, door10, door14, door23, door31, door33, b25, door38, b26, door22, door32, door34, door35, door42, b30, door48, b35, door29, b36, door27, b39, b40, b41, door50, b43, door25, door46, door47, door55, b44, door36, b52, door20, b58, door40, b59, door43, b60, door58, b61, b65, door28, door44, b71, b83, b85, b93, b94, door45]
+Number of entities / actions: 87
+Network layers: 3
+
+==================================================================
+LayerName (LayerType)   nIn,nOut   TotalParams   ParamsShape      
+==================================================================
+layer0 (DenseLayer)     87,64      5.632         W:{87,64}, b:{64}
+layer1 (DenseLayer)     64,64      4.160         W:{64,64}, b:{64}
+layer2 (OutputLayer)    64,87      5.655         W:{64,87}, b:{87}
+------------------------------------------------------------------
+            Total Parameters:  15.447
+        Trainable Parameters:  15.447
+           Frozen Parameters:  0
+==================================================================
+
+Replay buffer size: 600
+Total training steps: 600
+----------------------------------------------------------------------------

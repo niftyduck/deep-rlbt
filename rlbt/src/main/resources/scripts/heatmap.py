@@ -57,7 +57,7 @@ import sys
 from optparse import OptionParser
 import matplotlib
 if saveToFile:
-   matplotlib.use('Agg')   # to generate png output, must be before importing matplotlib.pyplot
+    matplotlib.use('Agg')   # to generate png output, must be before importing matplotlib.pyplot
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
@@ -72,26 +72,52 @@ import scipy.stats as scistats
 
 
 def loadCSV(csvfile):
-   """ A help function to read a csv-file. """
-   # need to use a correct character encoding.... latin-1 does it
-   with open(csvfile, encoding='latin-1') as file:
-      content = csv.DictReader(file, delimiter=',')
-      rows = []
-      for row in content: rows.append(row)
-      return rows
+    """ A help function to read a csv-file. """
+    # need to use a correct character encoding.... latin-1 does it
+    with open(csvfile, encoding='latin-1') as file:
+        content = csv.DictReader(file, delimiter=',')
+        rows = []
+        for row in content: rows.append(row)
+        return rows
+
+
+def loadLevelGrid(csvfile):
+    """Parse a LabRecruits level CSV and return the spatial grid as a 2D list of tile types.
+
+    The CSV has a connectivity header (button/door rows) followed by the spatial grid.
+    Grid row index = Z world coordinate, grid col index = X world coordinate.
+    Tile values: 'f' = floor, 'w' = wall, '' = empty/outside.
+    """
+    with open(csvfile, encoding='latin-1') as f:
+        lines = f.read().strip().splitlines()
+
+    # The spatial grid starts at the first row whose first non-pipe cell is 'f', 'w', or ''
+    grid_start = 0
+    for i, line in enumerate(lines):
+        first_cell = line.split(',')[0].strip().lstrip('|')
+        if first_cell in ('f', 'w', ''):
+            grid_start = i
+            break
+
+    grid = []
+    for line in lines[grid_start:]:
+        cells = [c.strip().lstrip('|') for c in line.split(',')]
+        grid.append(cells)
+    return grid
 
 
 def mkHeatMap(dataset,
-        base_map_dataset,
-        selectedProperties,
-        xLabel:str,
-        yLabel:str,
-        combineFunction,
-        width:int,
-        height:int,
-        scale:float,
-        maxvalue:float,
-        outputfile:str="hmap"):
+              base_map_dataset,
+              selectedProperties,
+              xLabel:str,
+              yLabel:str,
+              combineFunction,
+              width:int,
+              height:int,
+              scale:float,
+              maxvalue:float,
+              outputfile:str="hmap",
+              wall_grid=None):
     """ A function to draw heatmap.
 
     It takes data where every row represents a visit to some 2D location on a map of size
@@ -139,20 +165,20 @@ def mkHeatMap(dataset,
 
     # prepare base map to dataset
     for p in base_map_dataset:
-        x = min(int(scale * float(p[xLabel])), W - 1)
-        y = min(int(scale * float(p[yLabel])), H - 1)
-
-
-# combine the value of the properties by summing them:
+        x = round(scale * float(p[xLabel]))
+        y = round(scale * float(p[yLabel]))
+        if not (0 <= x < W and 0 <= y < H):
+            continue
+        # combine the value of the properties by summing them:
         values = [float(p[propName]) for propName in selectedProperties]
         base_map[y, x] = min(combineFunction(base_map[y, x], values), maxvalue)  # capping the val at max-value
 
     for r in dataset:
-        x = min(int(scale * float(r[xLabel])), W - 1)
-        y = min(int(scale * float(r[yLabel])), H - 1)
-
-
-# combine the value of the properties by summing them:
+        x = round(scale * float(r[xLabel]))
+        y = round(scale * float(r[yLabel]))
+        if not (0 <= x < W and 0 <= y < H):
+            continue
+        # combine the value of the properties by summing them:
         values = [float(r[propName]) for propName in selectedProperties]
         map[y,x] = min(combineFunction(map[y,x],values) , maxvalue) # capping the val at max-value
 
@@ -163,12 +189,25 @@ def mkHeatMap(dataset,
             if map[y, x] == 0 : map[y,x] = white
             if base_map[y, x] == 0: base_map[y, x] = white
 
+    # build wall overlay (RGBA): dark gray where 'w', transparent elsewhere
+    wall_overlay = np.zeros((H, W, 4), dtype=float)
+    if wall_grid is not None:
+        for row_idx, row in enumerate(wall_grid):
+            for col_idx, cell in enumerate(row):
+                if cell == 'w':
+                    x = round(scale * col_idx)
+                    y = round(scale * row_idx)
+                    if 0 <= x < W and 0 <= y < H:
+                        wall_overlay[y, x] = (0.25, 0.25, 0.25, 1.0)  # dark gray, fully opaque
+
     ax = plt.gca()
     ax.xaxis.set_visible(False)
     ax.yaxis.set_visible(False)
     # colormap, see: https://matplotlib.org/stable/tutorials/colors/colormaps.html
     plt.imshow(base_map, cmap='hot', origin='lower', interpolation='nearest', vmax=white)
     plt.imshow(map, cmap='hot', origin='lower', interpolation='nearest', vmax=white, alpha=0.8)
+    if wall_grid is not None:
+        plt.imshow(wall_overlay, origin='lower', interpolation='nearest')
     #plt.imshow(map, cmap='hot', origin='lower', interpolation='bilinear')
 
     plt.title("Spatial Coverage")
@@ -218,12 +257,13 @@ class HeatmapCommandLine:
         parser.add_option("--basemap", dest="baseMapFile", help="input csv-file (comma separated) of the base level map")
         parser.add_option("--dir", dest="inputDir",  help="if specified, data will be read from all csv-files in this dir")
         parser.add_option("-o", dest="outputFile", default="hmap", help="output file (png); default is hmap.png")
-        parser.add_option("--width", dest="mapWidth", default="100", help="the width of the heatmap")
-        parser.add_option("--height", dest="mapHeight", default="100", help="the height of the heatmap")
+        parser.add_option("--width", dest="mapWidth", default=None, help="the width of the heatmap (default: auto-detected from data)")
+        parser.add_option("--height", dest="mapHeight", default=None, help="the height of the heatmap (default: auto-detected from data)")
         parser.add_option("--scale",  dest="tileScale", default="1",    help="the tile-scale of the heatmap")
         parser.add_option("--maxval", dest="mapValMax", default="100", help="maximum heat value in the heatmap")
         parser.add_option("--xname", dest="xName", default="x", help="label-name of x in the csv-file; default is \"x\"")
         parser.add_option("--yname", dest="yName", default="y", help="label-name of y in the csv-file; default is \"y\"")
+        parser.add_option("--levelmap", dest="levelMapFile", default=None, help="LabRecruits level CSV file; walls ('w' cells) will be drawn in dark gray")
 
         # parse the options and arguments:
         (options,args) = parser.parse_args()
@@ -280,26 +320,47 @@ class HeatmapCommandLine:
             print('** Properties to show: ', selectedProperties)
             combineFunction = self.combineFunction2  # by default it is maxSumCombineFunction
 
+        all_rows = dataset + base_map_dataset
+        xName = scriptOptions.xName
+        yName = scriptOptions.yName
+        if scriptOptions.mapWidth is None or scriptOptions.mapHeight is None:
+            xs = [float(r[xName]) for r in all_rows if xName in r]
+            zs = [float(r[yName]) for r in all_rows if yName in r]
+            auto_width  = math.ceil(max(xs)) + 1
+            auto_height = math.ceil(max(zs)) + 1
+            mapWidth  = auto_width  if scriptOptions.mapWidth  is None else int(scriptOptions.mapWidth)
+            mapHeight = auto_height if scriptOptions.mapHeight is None else int(scriptOptions.mapHeight)
+            print(f'** Auto-detected map size: {mapWidth} x {mapHeight}')
+        else:
+            mapWidth  = int(scriptOptions.mapWidth)
+            mapHeight = int(scriptOptions.mapHeight)
+
+        if scriptOptions.levelMapFile is not None:
+            print('** Level map file: ', scriptOptions.levelMapFile)
+            wall_grid = loadLevelGrid(scriptOptions.levelMapFile)
+        else:
+            wall_grid = None
+
         mkHeatMap(dataset,
-                base_map_dataset,
-                selectedProperties,
-                scriptOptions.xName,
-                scriptOptions.yName,
-                combineFunction,
-                int(scriptOptions.mapWidth),
-                int(scriptOptions.mapHeight),
-                float(scriptOptions.tileScale),
-                float(scriptOptions.mapValMax),
-                scriptOptions.outputFile
-                )
+                  base_map_dataset,
+                  selectedProperties,
+                  xName,
+                  yName,
+                  combineFunction,
+                  mapWidth,
+                  mapHeight,
+                  float(scriptOptions.tileScale),
+                  float(scriptOptions.mapValMax),
+                  scriptOptions.outputFile,
+                  wall_grid
+                  )
 
 
 if __name__ == "__main__":
-   cli = HeatmapCommandLine()
-   cli.main()
+    cli = HeatmapCommandLine()
+    cli.main()
 
-   #dataset = loadCSV("samplePXTracefile.csv")
-   #mkHeatMapWorker(dataset,{},"x","y",
-   #      visitCountCombineFunction,90,70,0.5,5
-   #   )
-
+    #dataset = loadCSV("samplePXTracefile.csv")
+    #mkHeatMapWorker(dataset,{},"x","y",
+    #      visitCountCombineFunction,90,70,0.5,5
+    #   )

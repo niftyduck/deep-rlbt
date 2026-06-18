@@ -1,0 +1,40 @@
+
+
+=====================Q-Table========================================
+Qtable size = 5
+----------------------------------------------------------------------------
+State = [door3 (false),button2 (false),door1 (false),button1 (false)]
+Number of Q value entry= 4
+action: door3	value: 0.1
+action: button2	value: 2.904200468136161
+action: door1	value: 0.1
+action: button1	value: 18.467941090645063
+State = [door3 (false),door2 (false),button2 (true),button3 (false),door1 (true),button1 (true)]
+Number of Q value entry= 6
+action: door3	value: 2.3800478592773433
+action: door2	value: 1.058050625
+action: button2	value: 2.5613303571428574
+action: button3	value: 0.7497128627323795
+action: door1	value: 0.1
+action: button1	value: 16.012807761912892
+State = [door3 (false),button2 (true),door1 (false),button1 (false)]
+Number of Q value entry= 4
+action: door3	value: 0.08975
+action: button2	value: 13.659583913253162
+action: door1	value: 0.08975
+action: button1	value: -3.4335360067382816
+State = [door3 (false),door2 (false),button2 (false),button3 (false),door1 (true),button1 (true)]
+Number of Q value entry= 6
+action: door3	value: 0.1
+action: door2	value: 0.1
+action: button2	value: 12.95640974232998
+action: button3	value: 17.294654752758788
+action: door1	value: 0.5970446428571429
+action: button1	value: 0.1
+State = [button4 (false),door2 (true),button3 (true),door1 (false)]
+Number of Q value entry= 4
+action: button4	value: 57.854687500000004
+action: door2	value: 0.7713567187499999
+action: button3	value: -2.7312248095052487
+action: door1	value: -0.0486352186651442
+----------------------------------------------------------------------------
