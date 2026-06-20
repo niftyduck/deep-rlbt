@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.TreeMap;
 
 import burlap.mdp.core.action.Action;
 import burlap.mdp.core.action.ActionType;
@@ -49,7 +50,11 @@ public class LabRecruitsActionType implements ActionType, Serializable {
 		// get all the interactable entities in this state
 		//System.out.println("LIST OF APPLICABLE ACTION");
 		List<Action> actions = new ArrayList<Action>();
-		Map<String, ObjectInstance> objectsMap = ((LabRecruitsState)s).getObjectsMap();
+		// HashMap's iteration order is not guaranteed and varies with the set of currently
+		// observed entities; sort by entity id so the action list (and the Q-value list built
+		// from it) is deterministic across calls, which matters for reproducibility under a
+		// fixed random seed in BURLAP's tie-breaking policies (EpsilonGreedy/GreedyQPolicy).
+		Map<String, ObjectInstance> objectsMap = new TreeMap<>(((LabRecruitsState)s).getObjectsMap());
 		for (Entry<String , ObjectInstance> entry : objectsMap.entrySet()) {
 			String name = entry.getKey();
 			LabRecruitsEntityObject labEntityObject = (LabRecruitsEntityObject) entry.getValue();
